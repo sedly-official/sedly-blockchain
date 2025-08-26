@@ -1,0 +1,27 @@
+[package]
+name = "sedly-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Cryptography
+sha2 = { workspace = true }
+secp256k1 = { workspace = true }
+hex = { workspace = true }
+rocksdb = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+
+# Utilities
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+
+[dev-dependencies]
+# Testing
+proptest = { workspace = true }
+criterion = { workspace = true }
+tempfile = "3.8"

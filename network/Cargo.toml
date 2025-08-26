@@ -1,0 +1,24 @@
+[package]
+name = "sedly-network"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Local dependencies
+sedly-core = { path = "../core" }
+
+# Networking
+libp2p = { workspace = true }
+
+# Async runtime
+tokio = { workspace = true }
+futures = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Utilities
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }

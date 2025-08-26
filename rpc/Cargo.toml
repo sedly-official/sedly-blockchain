@@ -1,0 +1,25 @@
+[package]
+name = "sedly-rpc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Local dependencies
+sedly-core = { path = "../core" }
+
+# HTTP server
+axum = "0.7"
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors"] }
+
+# Async runtime
+tokio = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Utilities
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }

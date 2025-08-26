@@ -1,0 +1,33 @@
+[package]
+name = "sedly-consensus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Local dependencies
+sedly-core = { path = "../core" }
+
+# Consensus
+tendermint = { workspace = true }
+tendermint-abci = { workspace = true }
+
+# Async runtime
+tokio = { workspace = true }
+futures = { workspace = true }
+
+# Cryptography
+sha2 = { workspace = true }  # Add this line
+hex = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+
+# Utilities
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

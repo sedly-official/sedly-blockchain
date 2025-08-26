@@ -1,0 +1,26 @@
+[package]
+name = "sedly-wallet"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Local dependencies
+sedly-core = { path = "../core" }
+
+# Cryptography
+secp256k1 = { workspace = true }
+sha2 = { workspace = true }
+hex = { workspace = true }
+ring = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Database
+rocksdb = { workspace = true }
+
+# Utilities
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }

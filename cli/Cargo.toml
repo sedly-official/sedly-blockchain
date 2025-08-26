@@ -1,0 +1,33 @@
+[package]
+name = "sedly-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "sedly"
+path = "src/main.rs"
+
+[dependencies]
+# Local dependencies
+sedly-core = { path = "../core" }
+sedly-wallet = { path = "../wallet" }
+sedly-rpc = { path = "../rpc" }
+sedly-consensus = { path = "../consensus" }
+
+# CLI
+clap = { workspace = true }
+
+# Async runtime
+tokio = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Database
+rocksdb = { workspace = true }
+
+# Utilities
+anyhow = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }
