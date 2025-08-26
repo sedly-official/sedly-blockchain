@@ -71,7 +71,7 @@ Sedly is a decentralized blockchain platform that combines the best of Bitcoin's
 └─────────────────────┼───────────────────┼───────────────────┘
                       │                   │
 ┌─────────────────────┼───────────────────┼───────────────────┐
-│              Core Blockchain Engine (✅ Complete)           │
+│              Core Blockchain Engine (Complete)              │
 ├─────────────────────────────────────────────────────────────┤
 │  • eUTXO Transaction Model                                  │
 │  • SHA-256 Mining & Difficulty Adjustment                   │
